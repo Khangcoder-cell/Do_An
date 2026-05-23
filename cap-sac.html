@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Cáp sạc chính hãng - Phone Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-menu">
+        <div class="menu-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="op-lung.html">Ốp lưng</a>
+            <a href="tai-nghe.html">Tai nghe</a>
+            <a href="sac-du-phong.html">Sạc dự phòng</a>
+            <a href="cap-sac.html" class="active">Cáp sạc</a>
+            <a href="loa-bluetooth.html">Loa bluetooth</a>
+        </div>
+        <div class="cart" onclick="showCart()">
+            🛒 Giỏ hàng: <span id="count">0</span>
+        </div>
+    </div>
+
+    <div class="title-product">
+        <h2>CÁP SẠC & BỘ SẠC NHANH</h2>
+    </div>
+
+    <section class="product-container">
+        <!-- Sản phẩm 1 -->
+     <div class="card product">
+    <div class="badge badge-discount">Giảm 1%</div>
+    <div class="badge badge-installment">Trả góp 0%</div>
+    <div class="brand-name">Apple</div>
+    
+    <div class="card-media">
+        <div class="product-img">
+            <img src="images/capsac/cap-apple-thunderbolt-4-type-c-pro-1-8m-mw5j3za-a_1_.webp" alt="Cáp sạc Type-C">
+        </div> 
+        <div class="product-specs">
+            <div class="spec-item">
+                <span class="icon">📏</span>
+                <p>1.8m</p>
+            </div>
+            <div class="spec-item">
+                <span class="icon">⚡</span>
+                <p>40Gbps</p>
+            </div>
+        </div> 
+    </div>
+    
+    <h3 class="product-title">Cáp sạc Type-C to Type-C siêu bền, hỗ trợ sạc nhanh</h3>
+    
+    <div class="product-price">
+        <span class="price-new">4.350.000đ</span>
+        <span class="price-old">4.380.000đ</span>
+    </div>
+    
+    <div class="promotions">
+        <div class="promo-box smember">Smember giảm đến 50.000đ</div>
+    </div>
+
+    <!-- NÚT THÊM VÀO GIỎ HÀNG -->
+    <button class="add-to-cart-btn" onclick="addCart('Cáp Type-C Apple', '4.350.000')">
+        🛒 Thêm vào giỏ hàng
+    </button>
+</div>
+ <div class="card product">
+            <div class="badge badge-discount">Giảm 10%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Baseus</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/capsac/0__1__9ce1da2af8b2483588d115390cbf86c1_f94cbcbb5cf54037bed2d900668dc312.jpg" alt="Cáp sạc Lightning">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Cáp Sạc Nhanh Baseus Dura Series USB to Lightning 2.4A (480Mbps)</h3>
+            <div class="product-price">
+                <span class="price-new">1.080.000đ</span>
+                <span class="price-old">1.200.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Cáp Sạc Nhanh Baseus Dura Series USB to Lightning 2.4A (480Mbps)', '1.080.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card product">
+            <div class="badge badge-discount">Giảm 35%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Baseus</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/capsac/1_e47e234d4e4e4a7fb7d23cf50c4b6cd6_1eb0ec4491874a888200b78c3b9bd96b.jpg" alt="Cáp sạc 3 đầu">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Cáp Sạc 3 Đầu Công Suất Cao Baseus Flash Series Ⅱ One-for-three Fast Charging Data Cable (USB to M+L+C 100W 1.2m)</h3>
+            <div class="product-price">
+                <span class="price-new">2.600.000đ</span>
+                <span class="price-old">3.200.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Cáp Sạc 3 Đầu Công Suất Cao Baseus Flash Series Ⅱ One-for-three Fast Charging Data Cable (USB to M+L+C 100W 1.2m)', '2.600.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card product">
+            <div class="badge badge-discount">Giảm 30%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Ugreen</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/capsac/ugreen-100w-pd-fast-charger-4k-60hz-10gbps-data-lead-usb-c-to-usb-c-cable-431228.webp" alt="Cáp sạc">
+                </div>
+               
+            </div>
+            <h3 class="product-title">Cáp sạc Ugreen 100W PD Fast Charger USB-C to USB-C Cable</h3>
+            <div class="product-price">
+                <span class="price-new">1.400.000đ</span>
+                <span class="price-old">2.000.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Cáp sạc Ugreen 100W PD Fast Charger USB-C to USB-C Cable', '1.400.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+ <div class="card product">
+            <div class="badge badge-discount">Giảm 20%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Ugreen</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/capsac/ugreen-mfi-certified-iphone-charger-usb-c-to-lightning-cable-850786.webp" alt="Cáp sạc">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Cáp sạc Ugreen MFi Certified iPhone Charger USB-C to Lightning Cable</h3>
+            <div class="product-price">
+                <span class="price-new">720.000đ</span>
+                <span class="price-old">900.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Cáp sạc Ugreen MFi Certified iPhone Charger USB-C to Lightning Cable', '720.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+ <div class="card product">
+            <div class="badge badge-discount">Giảm 11%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Ugreen</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/capsac/ugreen-mfi-braided-pd-fast-charger-usb-c-to-lightning-cable-666707.webp" alt="Cáp sạc">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Cáp sạc Ugreen MFi Braided PD Fast Charger USB-C to Lightning Cable</h3>
+            <div class="product-price">
+                <span class="price-new">899.000đ</span>
+                <span class="price-old">999.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Cáp sạc Ugreen MFi Braided PD Fast Charger USB-C to Lightning Cable', '899.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+      <div class="card product">
+            <div class="badge badge-discount">Giảm 11%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">InnoStyle Duraflex</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/capsac/cap-sac-nhanh-innostyle-duraflex-18w-usb-c-to-lightning-1-5m-mfi-iphone-ipad-ipod-zogyq2fz.jpg" alt="Cáp sạc">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Cáp sạc nhanh InnoStyle Duraflex 18W USB-C to Lightning 1.5m MFi iPhone iPad iPod</h3>
+            <div class="product-price">
+                <span class="price-new">899.000đ</span>
+                <span class="price-old">999.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Cáp sạc nhanh InnoStyle Duraflex 18W USB-C to Lightning 1.5m MFi iPhone iPad iPod', '899.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card product">
+            <div class="badge badge-discount">Giảm 11%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Anker</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/capsac/69621_cap_sac_dien_thoai_anker_a8552_56 (1).png" alt="Cáp sạc">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Cáp sạc Anker A8552 56W C to C 2.4A (480Mbps)</h3>
+            <div class="product-price">
+                <span class="price-new">899.000đ</span>
+                <span class="price-old">999.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Cáp sạc Anker A8552 56W C to C 2.4A (480Mbps) ', '899.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+
+        <!-- Các card khác tương tự cho đủ 8 ô -->
+    </section>
+
+    <footer><p>© 2026 Shop Phụ Kiện Điện Thoại</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>

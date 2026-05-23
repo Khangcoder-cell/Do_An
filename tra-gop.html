@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tai nghe chính hãng - Phone Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- THANH MENU GIỎ HÀNG -->
+    <div class="top-menu">
+        <div class="menu-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="op-lung.html">Ốp lưng</a>
+            <a href="tai-nghe.html" class="active">Tai nghe</a>
+            <a href="sac-du-phong.html">Sạc dự phòng</a>
+            <a href="cap-sac.html">Cáp sạc</a>
+            <a href="loa-bluetooth.html">Loa bluetooth</a>
+        </div>
+        <div class="cart" onclick="showCart()">
+            🛒 Giỏ hàng: <span id="count">0</span>
+        </div>
+    </div>
+
+    <!-- Tiêu đề trang -->
+    <div class="title-product">
+        <h2>HIỆN TẠI CHƯA HỖ TRỢ TRẢ GÓP ONLINE</h2>
+    </div>
+    
+
+    <footer>
+        <p>© 2026 Shop Phụ Kiện Điện Thoại</p>
+    </footer>
+
+    <!-- Sử dụng chung script.js để đồng bộ giỏ hàng qua LocalStorage -->
+    <script src="script.js"></script>
+</body>
+</html>

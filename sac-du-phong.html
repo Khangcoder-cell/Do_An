@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Sạc dự phòng - Phone Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- THANH MENU GIỎ HÀNG -->
+    <div class="top-menu">
+        <div class="menu-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="op-lung.html">Ốp lưng</a>
+            <a href="tai-nghe.html">Tai nghe</a>
+            <!-- Mục Sạc dự phòng được thêm class active -->
+            <a href="sac-du-phong.html" class="active">Sạc dự phòng</a>
+            <a href="cap-sac.html">Cáp sạc</a>
+            <a href="loa-bluetooth.html">Loa bluetooth</a>
+        </div>
+        <div class="cart" onclick="showCart()">
+            🛒 Giỏ hàng: <span id="count">0</span>
+        </div>
+    </div>
+
+    <!-- Tiêu đề trang -->
+    <div class="title-product">
+        <h2>SẠC DỰ PHÒNG CHÍNH HÃNG</h2>
+    </div>
+
+    <!-- Khung chứa sản phẩm -->
+    <section class="product-container">
+        <div class="card product">
+    <div class="badge badge-discount">Giảm 31%</div>
+    <div class="badge badge-installment">Trả góp 0%</div>
+    <div class="brand-name">Anker</div>
+    
+    <div class="card-media">
+        <div class="product-img">
+            <img src="images/sdp/frame_524_1__4.webp" alt="Sạc dự phòng">
+        </div>
+        <div class="product-specs">
+            <div class="spec-item">
+                <span class="icon">⚡</span>
+                <p>20W</p>
+            </div>
+            <div class="spec-item">
+                <span class="icon">📏</span>
+                <p>10000mAh</p>
+            </div>
+        </div>
+    </div>
+    
+    <h3 class="product-title">Sạc dự phòng PowerCore 10000 PD Sạc Siêu Nhanh</h3>
+    
+    <div class="product-price">
+        <span class="price-new">3.650.000đ</span>
+        <span class="price-old">5.300.000đ</span>
+    </div>
+    
+    <div class="promotions">
+        <div class="promo-box smember">Smember giảm đến 30.000đ</div>
+    </div>
+
+    <!-- NÚT THÊM VÀO GIỎ HÀNG -->
+    <button class="add-to-cart-btn" onclick="addCart('Sạc dự phòng PowerCore', '3.650.000')">
+        🛒 Thêm vào giỏ hàng
+    </button>
+</div>
+
+ <div class="card product">
+            <div class="badge badge-discount">Giảm 10%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Anker</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sdp/den_-_02__1__3eb7dfc9a8eb4955839cba31f232323f.jpg" alt="Sạc dự phòng">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Sạc dự phòng Anker 20W dung lượng lớn 20000mAh</h3>
+            <div class="product-price">
+                <span class="price-new">1.080.000đ</span>
+                <span class="price-old">1.200.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Sạc dự phòng Anker 20W', '1.080.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card product">
+            <div class="badge badge-discount">Giảm 35%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Vivumax</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sdp/pb.p200_wh_cd05bc6c58bb4ac28a866720e9939c7c_grande.jpg" alt="Pin sạc dự phòng">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Pin sạc dự phòng Polymer 20.000mAh Vivumax P200 Tích hợp 4 dây sạc</h3>
+            <div class="product-price">
+                <span class="price-new">2.600.000đ</span>
+                <span class="price-old">3.200.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Pin sạc dự phòng Polymer 20.000mAh Vivumax P200', '2.600.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card product">
+            <div class="badge badge-discount">Giảm 30%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">D99</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sdp/sac-du-phong-d99.png" alt="Pin sạc dự phòng">
+                </div>
+               
+            </div>
+            <h3 class="product-title">Sạc Dự Phòng D229, Dung lượng 30000mah, Tích Hợp Dây Sạc, Thích Hợp Mọi Loại Máy Điện Thoại, Bảo Hành 6 Tháng, DMDD6886</h3>
+            <div class="product-price">
+                <span class="price-new">1.400.000đ</span>
+                <span class="price-old">2.000.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Sạc Dự Phòng D229, Dung lượng 30000mah, Tích Hợp Dây Sạc, Thích Hợp Mọi Loại Máy Điện Thoại, Bảo Hành 6 Tháng, DMDD6886', '1.400.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+ <div class="card product">
+            <div class="badge badge-discount">Giảm 20%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Baseus</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sdp/upload_da2900585fd24ff1bfa2389490009192.jpg" alt="Ốp lưng">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Pin Sạc Dự Phòng Baseus EnerFill FC31 10000mAh/20000mAh 22.5W (Digital Display, with 2 Built-in Cables)</h3>
+            <div class="product-price">
+                <span class="price-new">720.000đ</span>
+                <span class="price-old">900.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Pin Sạc Dự Phòng Baseus EnerFill FC31 10000mAh/20000mAh 22.5W (Digital Display, with 2 Built-in Cables)', '720.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+ <div class="card product">
+            <div class="badge badge-discount">Giảm 11%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">SAMSUNG</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sdp/10_e3555cbe81164ed78ad76e82a01d9c9f_c42174ed7b064adba2ece01dc95ff348.png" alt="Ốp lưng">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Pin Dự Phòng Không Dây SAMSUNG EnerFill FM12 Qi2 10000mAh 22.5W (Sạc Không Dây Qi2 15W)</h3>
+            <div class="product-price">
+                <span class="price-new">899.000đ</span>
+                <span class="price-old">999.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Pin Dự Phòng Không Dây SAMSUNG EnerFill FM12 Qi2 10000mAh 22.5W (Sạc Không Dây Qi2 15W)', '899.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+      <div class="card product">
+            <div class="badge badge-discount">Giảm 11%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Xiaomi</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sdp/lvb031-bk_5abffeb26c294999b000059d949b1807_9b099ee3b2d6430cb81c554f19b38ef3.jpg" alt="Ốp lưng">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Pin sạc không dây Xiaomi Magnetic 6000mAh 20W kèm cáp Xiaobai Type-C to Type-C 60W dài 30cm Hút nam châm</h3>
+            <div class="product-price">
+                <span class="price-new">899.000đ</span>
+                <span class="price-old">999.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Pin sạc không dây Xiaomi Magnetic 6000mAh 20W kèm cáp Xiaobai Type-C to Type-C 60W dài 30cm Hút nam châm', '899.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card product">
+            <div class="badge badge-discount">Giảm 11%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Baseus</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/sdp/0__5__5546b6e1d5314cfcbcdd85c8572a12c9_dce34970b7204c7f9bc93c02b1f38764.jpg" alt="Ốp lưng">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Pin Sạc Dự Phòng Baseus Lipow Dual-Cable 10000mAh/20000mAh 22.5W (Digital Display, With USB to C 3A 0.2m)</h3>
+            <div class="product-price">
+                <span class="price-new">899.000đ</span>
+                <span class="price-old">999.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Pin Sạc Dự Phòng Baseus Lipow Dual-Cable 10000mAh/20000mAh 22.5W (Digital Display, With USB to C 3A 0.2m)', '899.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Shop Phụ Kiện Điện Thoại</p>
+    </footer>
+
+    <!-- Lưu ý: Chỉ cần 1 dòng script.js là đủ -->
+    <script src="script.js"></script>
+</body>
+</html>

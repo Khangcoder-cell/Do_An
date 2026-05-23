@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Liên hệ - QUANG KIT SHOP</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .contact-container{
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .contact-info,
+        .contact-form{
+
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+        }
+
+        .contact-info h3,
+        .contact-form h3{
+
+            color: #d62828;
+            margin-bottom: 20px;
+            font-size: 28px;
+
+        }
+
+        .contact-info p{
+
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 1.6;
+
+        }
+
+        .contact-info iframe{
+
+            width: 100%;
+            height: 250px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 15px;
+
+        }
+
+        .contact-form input,
+        .contact-form textarea{
+
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+
+            border: 1px solid #ddd;
+            border-radius: 10px;
+
+            font-size: 15px;
+            outline: none;
+
+        }
+
+        .contact-form textarea{
+            resize: none;
+            height: 150px;
+        }
+
+        .contact-form button{
+
+            width: 100%;
+            padding: 15px;
+
+            background: #d62828;
+            color: white;
+
+            border: none;
+            border-radius: 10px;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+            transition: 0.3s;
+
+        }
+
+        .contact-form button:hover{
+            background: #b71c1c;
+        }
+
+        .contact-social{
+
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+
+        }
+
+        .contact-social a{
+
+            text-decoration: none;
+            background: #d62828;
+            color: white;
+
+            padding: 10px 15px;
+            border-radius: 10px;
+
+            transition: 0.3s;
+
+        }
+
+        .contact-social a:hover{
+            background: #b71c1c;
+        }
+
+        /* MOBILE */
+
+        @media screen and (max-width: 768px){
+
+            .contact-container{
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <div class="top-menu">
+
+        <div class="menu-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="op-lung.html">Ốp lưng</a>
+            <a href="tai-nghe.html">Tai nghe</a>
+            <a href="sac-du-phong.html">Sạc dự phòng</a>
+            <a href="cap-sac.html">Cáp sạc</a>
+            <a href="loa-bluetooth.html">Loa bluetooth</a>
+        </div>
+
+        <div class="cart" onclick="showCart()">
+            🛒 Giỏ hàng: <span id="count">0</span>
+        </div>
+
+    </div>
+
+    <!-- TIÊU ĐỀ -->
+
+    <div class="title-product">
+        <h2>LIÊN HỆ CHÚNG TÔI</h2>
+    </div>
+
+    <!-- KHUNG LIÊN HỆ -->
+
+    <section class="contact-container">
+
+        <!-- THÔNG TIN -->
+
+        <div class="contact-info">
+
+            <h3>Thông tin cửa hàng</h3>
+
+            <p>
+                📍 Địa chỉ:
+                60 Lâm Văn Bền, TP.HCM
+            </p>
+
+            <p>
+                📞 Hotline:
+                0909 999 999
+            </p>
+
+            <p>
+                📧 Email:
+                quangkitshop@gmail.com
+            </p>
+
+            <p>
+                ⏰ Giờ mở cửa:
+                8:00 - 22:00 mỗi ngày
+            </p>
+
+            <!-- MAP -->
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18..."
+                loading="lazy">
+            </iframe>
+
+            <!-- MXH -->
+
+            <div class="contact-social">
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <a href="#">
+                    Zalo
+                </a>
+
+                <a href="#">
+                    TikTok
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- FORM -->
+
+        <div class="contact-form">
+
+            <h3>Gửi liên hệ</h3>
+
+            <form>
+
+                <input type="text"
+                placeholder="Nhập họ tên">
+
+                <input type="email"
+                placeholder="Nhập email">
+
+                <input type="text"
+                placeholder="Nhập số điện thoại">
+
+                <textarea
+                placeholder="Nhập nội dung liên hệ...">
+                </textarea>
+
+                <button type="submit">
+                    Gửi liên hệ
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <p>© 2026 Shop Phụ Kiện Điện Thoại</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

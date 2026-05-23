@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tai nghe chính hãng - Phone Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- THANH MENU GIỎ HÀNG -->
+    <div class="top-menu">
+        <div class="menu-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="op-lung.html">Ốp lưng</a>
+            <a href="tai-nghe.html" class="active">Tai nghe</a>
+            <a href="sac-du-phong.html">Sạc dự phòng</a>
+            <a href="cap-sac.html">Cáp sạc</a>
+            <a href="loa-bluetooth.html">Loa bluetooth</a>
+        </div>
+        <div class="cart" onclick="showCart()">
+            🛒 Giỏ hàng: <span id="count">0</span>
+        </div>
+    </div>
+
+    <!-- Tiêu đề trang -->
+    <div class="title-product">
+        <h2>TAI NGHE BLUETOOTH & CÓ DÂY</h2>
+    </div>
+
+    <!-- Khung chứa sản phẩm -->
+    <section class="product-container">
+        
+<div class="card product">
+    <div class="badge badge-discount">Giảm 19%</div>
+    <div class="badge badge-installment">Trả góp 0%</div>
+    <div class="brand-name">Apple</div>
+    
+    <div class="card-media">
+        <div class="product-img">
+            <img src="images/tainghe/apple-airpods-4-thumb.webp" alt="Tai nghe Bluetooth">
+        </div>
+    </div>
+    
+    <h3 class="product-title">Tai nghe Bluetooth Apple AirPods 4 chống ồn tốt </h3>
+    
+    <div class="product-price">
+        <span class="price-new">1.776.000đ</span>
+        <span class="price-old">2.190.000đ</span>
+    </div>
+    
+    <div class="promotions">
+        <div class="promo-box smember">Smember giảm đến 50.000đ</div>
+    </div>
+
+    <!-- NÚT BẤM RIÊNG BIỆT -->
+    <button class="add-to-cart-btn" onclick="addCart('Tai nghe Bluetooth Apple AirPods 4', '1.776.000')">
+        🛒 Thêm vào giỏ hàng
+    </button>
+</div>
+ <div class="card product">
+            <div class="badge badge-discount">Giảm 10%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Sennheiser</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/tainghe/1742799970423_1741578428895_tai_nghe_sennheiser_momentum_4_didongviet.avif" alt="Tai nghe Bluetooth">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Tai nghe Bluetooth Sennheiser Momentum 4</h3>
+            <div class="product-price">
+                <span class="price-new">5.999.000đ</span>
+                <span class="price-old">6.999.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Tai nghe Bluetooth Sennheiser Momentum 4', '5.999.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card product">
+            <div class="badge badge-discount">Giảm 35%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Suunto Wing</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/tainghe/1750239909146_tai_nghe_the_thao_bluetooth_truyen_am_qua_xuong_suunto_wing_didongviet.avif" alt="Tai nghe thể thao">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Tai nghe thể thao Bluetooth truyền âm qua xương Suunto Wing</h3>
+            <div class="product-price">
+                <span class="price-new">2.600.000đ</span>
+                <span class="price-old">3.200.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Tai nghe thể thao Bluetooth truyền âm qua xương Suunto Wing ', '2.600.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card product">
+            <div class="badge badge-discount">Giảm 30%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">RiverSong</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/tainghe/1736155258930_tai_nghe_riversong_airfly_l3_didongviet.avif" alt="Tai nghe Bluetooth">
+                </div>
+               
+            </div>
+            <h3 class="product-title">Tai nghe Bluetooth True Wireless RiverSong AirFly L3</h3>
+            <div class="product-price">
+                <span class="price-new">1.400.000đ</span>
+                <span class="price-old">2.000.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Tai nghe Bluetooth True Wireless RiverSong AirFly L3', '1.400.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+ <div class="card product">
+            <div class="badge badge-discount">Giảm 20%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">SAMSUNG</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/tainghe/thumb-6-samsung-galaxy-buds4-trang-didongviet.avif" alt=" Tai nghe Bluetooth">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Tai nghe Bluetooth Truewireless Samsung Galaxy Buds4</h3>
+            <div class="product-price">
+                <span class="price-new">720.000đ</span>
+                <span class="price-old">900.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Tai nghe Bluetooth Truewireless Samsung Galaxy Buds4', '720.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+ <div class="card product">
+            <div class="badge badge-discount">Giảm 11%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">Huawei</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/tainghe/1715880542063_huawei_freebuds_se_2_kv.avif" alt="Tai nghe không dây">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Tai nghe không dây Huawei Freebuds SE 2</h3>
+            <div class="product-price">
+                <span class="price-new">899.000đ</span>
+                <span class="price-old">999.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Tai nghe không dây Huawei Freebuds SE 2', '899.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+      <div class="card product">
+            <div class="badge badge-discount">Giảm 11%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">StarGO Hero</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/tainghe/1742378426816_tai_nghe_truewireless_stargo_hero_didongviet.avif" alt="Tai nghe TrueWireless">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Tai nghe TrueWireless StarGO Hero Pro Max</h3>
+            <div class="product-price">
+                <span class="price-new">899.000đ</span>
+                <span class="price-old">999.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Tai nghe TrueWireless StarGO Hero Pro Max', '899.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+         <div class="card product">
+            <div class="badge badge-discount">Giảm 11%</div>
+            <div class="badge badge-installment">Trả góp 0%</div>
+            <div class="brand-name">JBL</div>
+            <div class="card-media">
+                <div class="product-img">
+                    <img src="images/tainghe/1741684109773_tai_nghe_jbl_tune_670nc_didongviet.avif" alt="Tai nghe Bluetooth">
+                </div>
+                
+            </div>
+            <h3 class="product-title">Tai nghe Bluetooth chụp tai JBL Tune 670NC </h3>
+            <div class="product-price">
+                <span class="price-new">899.000đ</span>
+                <span class="price-old">999.000đ</span>
+            </div>
+            <div class="promotions">
+                <div class="promo-box smember">Smember giảm thêm 20.000đ</div>
+            </div>
+            <button class="add-to-cart-btn" onclick="addCart('Tai nghe Bluetooth chụp tai JBL Tune 670NC ', '899.000')">
+                🛒 Thêm vào giỏ hàng
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Shop Phụ Kiện Điện Thoại</p>
+    </footer>
+
+    <!-- Sử dụng chung script.js để đồng bộ giỏ hàng qua LocalStorage -->
+    <script src="script.js"></script>
+</body>
+</html>
